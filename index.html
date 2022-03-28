@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="icomoon/style.css">
   <script defer src="script.js"></script>
+
 </head>
 <body>
   <div id="main">
     <div class="details">
       <h1>To Do list</h1>
       <hr>
-      <div class="alltasks">
+      <div id="allTasks">
         <div class="task">
           <span class="icon icon-star"></span>
           <p> Task 1</p>
@@ -29,8 +30,8 @@
     <hr>
     <div class="task newtask">
       <form>
-        <input type="text">
-        <span class="icon-upload"></span>
+        <input type="text" class="newtaskfield" value="" placeholder="enter new task" autofocus>
+        <button id="button"class="icon-upload" ></button>
       </form>
     </div>
   </div>
