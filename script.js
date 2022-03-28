@@ -31,9 +31,13 @@ allTasks.addEventListener("click", (eo) =>{
 
   switch (eo.target.className){
     case "icon icon-star":
-      eo.target.style.opacity="1";
+      eo.target.classList.add("fullOpacity");
       allTasks.prepend(eo.target.parentElement);
       break;
+      case "icon icon-star fullOpacity":
+        eo.target.classList.remove("fullOpacity");
+        // allTasks.prepend(eo.target.parentElement);
+        break;
     case "icon icon-bin":
       eo.target.parentElement.parentElement.remove();
       break;
@@ -45,6 +49,8 @@ allTasks.addEventListener("click", (eo) =>{
     case "icon icon-heart":
       eo.target.classList.add("icon-sad");
       eo.target.classList.remove("icon-heart");
+      eo.target.parentElement.parentElement.querySelector("p").classList.remove("checked");
+
       break;
   }
 
