@@ -85,6 +85,9 @@ p{
   font-size: 4vw;
   color: cadetblue;
 }
+.icon-heart{
+  color: rgb(150,115,195);
+}
 
 /* Input Area */
 .newtask{
@@ -113,3 +116,9 @@ button{all:unset;}
   
 }
 
+
+/* For Javascript */
+.checked{
+  text-decoration: line-through;
+  text-decoration-style: wavy;
+  color: rgba(134, 91, 190, 0.513);}
